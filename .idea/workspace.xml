@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8332db32-5fe9-4b43-bba5-2752bb4ce356" name="Changes" comment="chore: project setup">
-      <change afterPath="$PROJECT_DIR$/account-command/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8332db32-5fe9-4b43-bba5-2752bb4ce356" name="Changes" comment="chore: configure account-command API.">
+      <change afterPath="$PROJECT_DIR$/account-query/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-command/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-query/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725588498160</updated>
-      <workItem from="1725588499163" duration="1116000" />
+      <workItem from="1725588499163" duration="1952000" />
     </task>
     <task id="LOCAL-00001" summary="chore: project setup">
       <option name="closed" value="true" />
@@ -136,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725589332137</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="chore: configure account-command API.">
+      <option name="closed" value="true" />
+      <created>1725589650185</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725589650185</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +161,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: project setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: project setup" />
+    <MESSAGE value="chore: configure account-command API." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: configure account-command API." />
   </component>
 </project>
