@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8332db32-5fe9-4b43-bba5-2752bb4ce356" name="Changes" comment="chore: configure account-query API.">
-      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/api/commands/CloseAccountCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/api/commands/DepositFundsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/api/commands/OpenAccountCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/api/commands/WithdrawFundsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-common/src/main/java/com/techbank/accountcommon/dto/AccountType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-common/src/main/java/com/techbank/accountcommon/events/AccountClosedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-common/src/main/java/com/techbank/accountcommon/events/AccountOpenedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-common/src/main/java/com/techbank/accountcommon/events/FundsDepositedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account-common/src/main/java/com/techbank/accountcommon/events/FundsWithdrawnEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/commands/BaseCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/events/BaseEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/messages/Message.java" afterDir="false" />
+    <list default="true" id="8332db32-5fe9-4b43-bba5-2752bb4ce356" name="Changes" comment="chore: adding base messages and events, also adding docker-compose.yml to create infra.">
+      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/infrastructure/AccountCommandDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/commands/CommandHandlerMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/infrastructure/CommandDispatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-command/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-command/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cqrs-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cqrs-core/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +62,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -151,7 +140,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725588498160</updated>
-      <workItem from="1725588499163" duration="5683000" />
+      <workItem from="1725588499163" duration="7408000" />
     </task>
     <task id="LOCAL-00001" summary="chore: project setup">
       <option name="closed" value="true" />
@@ -185,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725590478631</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="chore: adding base messages and events, also adding docker-compose.yml to create infra.">
+      <option name="closed" value="true" />
+      <created>1725662371517</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725662371517</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +203,7 @@
     <MESSAGE value="chore: project setup" />
     <MESSAGE value="chore: configure account-command API." />
     <MESSAGE value="chore: configure account-query API." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: configure account-query API." />
+    <MESSAGE value="chore: adding base messages and events, also adding docker-compose.yml to create infra." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: adding base messages and events, also adding docker-compose.yml to create infra." />
   </component>
 </project>
