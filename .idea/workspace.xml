@@ -32,6 +32,7 @@
     "accountId": "dc2d9b59-0a2c-47bf-90fd-06cbe9a36ffa"
   }
 }]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
 }]]></component>
