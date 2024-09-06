@@ -4,15 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8332db32-5fe9-4b43-bba5-2752bb4ce356" name="Changes" comment="chore: configure account-command API.">
-      <change afterPath="$PROJECT_DIR$/account-query/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="8332db32-5fe9-4b43-bba5-2752bb4ce356" name="Changes" comment="chore: configure account-query API.">
+      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/api/commands/CloseAccountCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/api/commands/DepositFundsCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/api/commands/OpenAccountCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/api/commands/WithdrawFundsCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-common/src/main/java/com/techbank/accountcommon/dto/AccountType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-common/src/main/java/com/techbank/accountcommon/events/AccountClosedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-common/src/main/java/com/techbank/accountcommon/events/AccountOpenedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-common/src/main/java/com/techbank/accountcommon/events/FundsDepositedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-common/src/main/java/com/techbank/accountcommon/events/FundsWithdrawnEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/commands/BaseCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/events/BaseEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/messages/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account-query/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-command/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-command/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cqrs-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cqrs-core/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,6 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -70,7 +92,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountCommandApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="AccountCommandApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="account-command" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.techbank.accountcommand.AccountCommandApplication" />
@@ -99,6 +121,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -116,7 +151,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725588498160</updated>
-      <workItem from="1725588499163" duration="1952000" />
+      <workItem from="1725588499163" duration="5683000" />
     </task>
     <task id="LOCAL-00001" summary="chore: project setup">
       <option name="closed" value="true" />
@@ -142,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725589650185</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="chore: configure account-query API.">
+      <option name="closed" value="true" />
+      <created>1725590478631</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725590478631</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +205,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="chore: project setup" />
     <MESSAGE value="chore: configure account-command API." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: configure account-command API." />
+    <MESSAGE value="chore: configure account-query API." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: configure account-query API." />
   </component>
 </project>
