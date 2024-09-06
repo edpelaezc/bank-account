@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/account-command/pom.xml" />
         <option value="$PROJECT_DIR$/account-query/pom.xml" />
         <option value="$PROJECT_DIR$/account-common/pom.xml" />
+        <option value="$PROJECT_DIR$/cqrs-core/pom.xml" />
       </list>
     </option>
   </component>
