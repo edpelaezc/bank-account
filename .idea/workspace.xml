@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8332db32-5fe9-4b43-bba5-2752bb4ce356" name="Changes" comment="chore: adding base messages and events, also adding docker-compose.yml to create infra.">
-      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/infrastructure/AccountCommandDispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/commands/CommandHandlerMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/infrastructure/CommandDispatcher.java" afterDir="false" />
+    <list default="true" id="8332db32-5fe9-4b43-bba5-2752bb4ce356" name="Changes" comment="feat: mediator pattern for CQRS command dispatching.">
+      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/domain/AccountAggregate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/domain/AggregateRoot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/messages/Message.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +140,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725588498160</updated>
-      <workItem from="1725588499163" duration="7408000" />
+      <workItem from="1725588499163" duration="11490000" />
     </task>
     <task id="LOCAL-00001" summary="chore: project setup">
       <option name="closed" value="true" />
@@ -182,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725662371517</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: mediator pattern for CQRS command dispatching.">
+      <option name="closed" value="true" />
+      <created>1725664975739</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725664975739</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +212,7 @@
     <MESSAGE value="chore: configure account-command API." />
     <MESSAGE value="chore: configure account-query API." />
     <MESSAGE value="chore: adding base messages and events, also adding docker-compose.yml to create infra." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: adding base messages and events, also adding docker-compose.yml to create infra." />
+    <MESSAGE value="feat: mediator pattern for CQRS command dispatching." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: mediator pattern for CQRS command dispatching." />
   </component>
 </project>
