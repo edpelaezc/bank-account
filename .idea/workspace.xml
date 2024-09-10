@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8332db32-5fe9-4b43-bba5-2752bb4ce356" name="Changes" comment="feat: mediator pattern for CQRS command dispatching.">
-      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/domain/AccountAggregate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/domain/AggregateRoot.java" afterDir="false" />
+    <list default="true" id="8332db32-5fe9-4b43-bba5-2752bb4ce356" name="Changes" comment="feat: adding Account aggregate.">
+      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/domain/EventStoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/infrastructure/AccountEventSourcingHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account-command/src/main/java/com/techbank/accountcommand/infrastructure/AccountEventStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/events/EventModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/exceptions/AggregateNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/exceptions/ConcurrencyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/handlers/EventSourcingHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/infrastructure/EventStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/cqrs-core/src/main/java/com/techbank/cqrscore/messages/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-command/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/account-command/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,22 +34,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "edpelaezc"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;edpelaezc&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/edpelaezc/bank-account.git",
-    "accountId": "dc2d9b59-0a2c-47bf-90fd-06cbe9a36ffa"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/edpelaezc/bank-account.git&quot;,
+    &quot;accountId&quot;: &quot;dc2d9b59-0a2c-47bf-90fd-06cbe9a36ffa&quot;
   }
-}]]></component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2lkpFgTnJdBaG7b7jiPUZZLpuwI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,7 +66,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.account-command [clean].executor": "Run",
+    "Maven.account-common [clean].executor": "Run",
+    "Maven.account-query [clean].executor": "Run",
+    "Maven.bank-account [compile].executor": "Run",
+    "Maven.cqrs-core [clean].executor": "Run",
+    "Maven.cqrs-core [install].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "zulu-21",
@@ -62,7 +88,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -140,7 +166,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725588498160</updated>
-      <workItem from="1725588499163" duration="11490000" />
+      <workItem from="1725588499163" duration="11987000" />
+      <workItem from="1725733828243" duration="225000" />
+      <workItem from="1725734056223" duration="11000" />
+      <workItem from="1725734068820" duration="27000" />
+      <workItem from="1725734097881" duration="85000" />
+      <workItem from="1725734186526" duration="32000" />
+      <workItem from="1725734219901" duration="195000" />
+      <workItem from="1725734415765" duration="44000" />
+      <workItem from="1725734461803" duration="4000" />
+      <workItem from="1725734472713" duration="3428000" />
+      <workItem from="1725925910447" duration="370000" />
+      <workItem from="1726007613592" duration="4279000" />
     </task>
     <task id="LOCAL-00001" summary="chore: project setup">
       <option name="closed" value="true" />
@@ -190,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725664975739</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: adding Account aggregate.">
+      <option name="closed" value="true" />
+      <created>1725674602108</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1725674602108</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +258,7 @@
     <MESSAGE value="chore: configure account-query API." />
     <MESSAGE value="chore: adding base messages and events, also adding docker-compose.yml to create infra." />
     <MESSAGE value="feat: mediator pattern for CQRS command dispatching." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: mediator pattern for CQRS command dispatching." />
+    <MESSAGE value="feat: adding Account aggregate." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: adding Account aggregate." />
   </component>
 </project>
